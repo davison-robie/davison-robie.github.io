@@ -1,0 +1,136 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+.navbar {
+    background-color: rgb(198, 199, 196, 1);
+    box-shadow: 2em 2em 4em rgb(2,0,36);
+}
+
+.navbar-toggler:active {
+    box-shadow: 0 5px 5px #262730;
+    transform: translateY(4px);
+}
+
+.nav-item:active {
+    box-shadow: 0 3px 5px #262730;
+    padding: 0 1em 0 1em;
+    transform: translateY(4px);
+    border-radius: 25%;
+    max-width: fit-content;
+}
+
+.btn {
+    position: fixed bottom;
+    border: solid 2px #FFFFFF;
+    color: #FFFFFF;
+}
+
+.jumbotron {
+    margin: 0 auto 10em auto;
+    background: none;
+    padding-top: 15em;
+    padding-bottom: 10em;
+    height: fit-content;
+}
+
+.siteBody {
+    background: linear-gradient(315deg, rgba(2,0,36,1) 0%, rgba(2,40,58,.9) 66%), url(./assets/portrait.jpg);
+    background-position: top, top;
+    background-attachment: scroll, fixed;
+    background-size: cover, cover;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    font: "Questrial" !important;
+}
+
+.ribbon {
+    color: #FFFFFF;
+    text-align: center;
+    background: #1481BA;
+    background: linear-gradient(45deg, #1481BA 0%, #F0F600 99%);
+    padding: 10em 0 10em 0;
+    box-shadow: .1em .1em 4em #C6C7C4;
+    margin: 1em auto 1em auto;
+}
+
+.ribbon p {
+    width: 75%;
+    margin: 1em auto 1em auto;
+    padding: 2em;
+    background-color: #02283a80;
+    border-radius: 25%;
+}
+
+.portfolioContainer {
+    margin: 0 auto 10em auto;
+    height: 100%;
+    padding: 10em 0 0 0;
+    width: 89%;
+    text-align: center;
+}
+
+.card {
+    background-color: rgb(198, 199, 196, 0);
+    border: solid 5px white;
+    border-radius: 2% 2% 10% 10%;
+    box-shadow: .1em .1em 4em #C6C7C4;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.card:active {
+    box-shadow: 0 5px 5px #000000;
+    transform: translateY(4px);
+}
+
+form {
+    color: #FFFFFF;
+    font: "Questrial";
+    text-align: center;
+    background: #1481BA;
+    background: linear-gradient(45deg, #1481BA 0%, #F0F600 99%);
+    padding: 5em;
+    width: 75%;
+    max-width: 350px;
+    margin: 10em auto 10em auto;
+    border-radius: 25%;
+    box-shadow: .1em .1em 4em #C6C7C4;
+}
+
+#formSubmit {
+    background: none;
+    color: #FFFFFF;
+    padding: .25em 1em .25em 1em;
+    border: solid 3px white;
+    border-radius: 25%;
+}
+
+#formSubmit:active {
+    box-shadow: 0 5px 5px #262730;
+    transform: translateY(4px);
+}
+
+.footer {
+    box-shadow: -2em -2em 4em #C6C7C4;
+}
+
+#gitHubButton:hover {
+    cursor: pointer;
+}
+
+#gitHubButton:active {
+    box-shadow: 0 5px 5px #262730;
+    transform: translateY(4px);
+}
+
+#linkedInButton:hover {
+    cursor: pointer;
+}
+
+#linkedInButton:active {
+    box-shadow: 0 5px 5px #262730;
+    transform: translateY(4px);
+}
