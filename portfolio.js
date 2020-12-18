@@ -1,3 +1,10 @@
+// let resumeButton = document.getElementById("resumeButton");
+// resumeButton.addEventListener("click", downloadPDF);
+
+// function downloadPDF() {
+//     window.open(
+//         "./assets/dRobieResume2020.pdf/", "_blank"); 
+// }
 let card1 = document.getElementById("card1");
 card1.addEventListener("click", card1Open);
 

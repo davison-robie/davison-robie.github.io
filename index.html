@@ -17,30 +17,28 @@
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="#"><b>DAVISON ROBIE</b></a>
+      <a href= "./assets/dRobieResume2020.pdf" download ><button class= "btn" id= "resumeButton">Download Resume</button></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#ribbonContainer">ABOUT ME</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#ribbon">ABOUT ME</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#portfolioContainer">PORTFOLIOS</a>
+            <a class="nav-link" href="#portfolioContainer">PORTFOLIO</a>
           </li>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contactForm">CONTACT</a>
+            <a class="nav-link" href="#formContainer">CONTACT</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  <button class= "btn">Download Resume</button>
   <div class= "siteBody">
+
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
         <h1 class="display-4">Davison Robie</h1>
@@ -48,9 +46,11 @@
       </div>
     </div>
 
-    <div class="ribbon" id="ribbon">
+    <div class="ribbonContainer" id="ribbonContainer">
+      <div class="ribbon" id="ribbon">
         <h2>ABOUT ME</h2>
         <p>I'm an aspiring junior web developer. I come to the tech industry with 20 years of experience as a musical composer, performer, producer, and audio engineer. I also enjoy graphic design and videography! I am hoping to join a team that will allow me to contribute while honing my skills as a developer. I bring my positive personality and artist's touch to any project I join. </p>
+      </div>
     </div>
 
     <div class= "portfolioContainer" id= "portfolioContainer">
@@ -89,39 +89,42 @@
         </div>
       </div>
     </div>
-
-  <form
-  id= "contactForm"
-  action="https://formspree.io/f/mleopvoy"
-  method="POST">
-  <h2>CONTACT</h2>
-  <br>
-  <label>
-    Your email:
-  </label>
-  <br>
-  <input type="text" name="_replyto">
-  <br>
-  <br>
-  <label>
-    Your message:
-  </label>
-  <br>
-  <textarea name="message"></textarea>
-  <br>
-  <br>
-  <button id= "formSubmit" type="submit">Send</button>
-  </form>
+  <div class= "formContainer" id="formContainer">
+    <form
+      id= "contactForm"
+      action="https://formspree.io/f/mleopvoy"
+      method="POST">
+      <h2>CONTACT</h2>
+      <br>
+      <label>
+        Your email:
+      </label>
+      <br>
+      <input type="text" name="_replyto">
+      <br>
+      <br>
+      <label>
+        Your message:
+      </label>
+      <br>
+      <textarea name="message"></textarea>
+      <br>
+      <br>
+      <button id= "formSubmit" type="submit">Send</button>
+    </form>
+  </div>
     <br>
+
     <br>
     <br>
     <br>
   </div>
+
   <footer class="bg-light text-center text-lg-start">
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
       <a class="text-light" href="#">&copy 2020 Davison Robie</a>
-      <img id= "linkedInButton" src="./assets/linkedInIcon.png" width= "50px" alt="Linked In">
-      <img id= "gitHubButton" src="./assets/github.png" width= "50px" alt="Github">
+      <img id= "linkedInButton" src="./assets/linkedInIcon.png" width= "25px" alt="Linked In">
+      <img id= "gitHubButton" src="./assets/github.png" width= "25px" alt="Github">
     </div>
   </footer>
 </body>

@@ -1,17 +1,18 @@
 html {
     scroll-behavior: smooth;
-  }
+    font-family: "Questrial", sans-serif !important;
+}
+
+
 
 .navbar {
     background-color: rgb(198, 199, 196, 1);
     box-shadow: 2em 2em 4em rgb(2,0,36);
 }
-
 .navbar-toggler:active {
     box-shadow: 0 5px 5px #262730;
     transform: translateY(4px);
 }
-
 .nav-item:active {
     box-shadow: 0 3px 5px #262730;
     padding: 0 1em 0 1em;
@@ -19,12 +20,48 @@ html {
     border-radius: 25%;
     max-width: fit-content;
 }
-
-.btn {
-    position: fixed bottom;
+.navbar-brand:active {
+    box-shadow: 0 3px 5px #262730;
+    padding: 0 1em 0 1em;
+    transform: translateY(4px);
+    border-radius: 10%;
+    max-width: fit-content;
+}
+#resumeButton {
     border: solid 2px #FFFFFF;
+    font-size: 10pt;
+    color: #FFFFFF;
+    position: absolute;
+    margin-left: 10px;
+    right: 10px;
+    top: 10px;
+    max-width: 35%;
+}
+#resumeButton:hover {
+    background: linear-gradient(45deg, #1481BA 0%, #F0F600 99%);
+}
+#resumeButton:active {
+    box-shadow: 0 5px 5px #262730;
+    transform: translateY(4px);
+}
+@media (max-width: 990px){
+    #resumeButton{
+        right: 85px;
+    }
+}
+
+
+
+.siteBody {
+    background: linear-gradient(315deg, rgba(2,0,36,1) 0%, rgba(2,40,58,.9) 66%), url(./assets/portrait.jpg);
+    background-position: top, top;
+    background-attachment: scroll, fixed;
+    background-size: cover, cover;
+    background-repeat: no-repeat;
     color: #FFFFFF;
 }
+
+
 
 .jumbotron {
     margin: 0 auto 10em auto;
@@ -34,16 +71,10 @@ html {
     height: fit-content;
 }
 
-.siteBody {
-    background: linear-gradient(315deg, rgba(2,0,36,1) 0%, rgba(2,40,58,.9) 66%), url(./assets/portrait.jpg);
-    background-position: top, top;
-    background-attachment: scroll, fixed;
-    background-size: cover, cover;
-    background-repeat: no-repeat;
-    color: #FFFFFF;
-    font: "Questrial" !important;
-}
 
+#ribbonContainer {
+    padding-top: 4em;
+}
 .ribbon {
     color: #FFFFFF;
     text-align: center;
@@ -53,7 +84,6 @@ html {
     box-shadow: .1em .1em 4em #C6C7C4;
     margin: 1em auto 1em auto;
 }
-
 .ribbon p {
     width: 75%;
     margin: 1em auto 1em auto;
@@ -62,6 +92,8 @@ html {
     border-radius: 25%;
 }
 
+
+
 .portfolioContainer {
     margin: 0 auto 10em auto;
     height: 100%;
@@ -69,28 +101,30 @@ html {
     width: 89%;
     text-align: center;
 }
-
 .card {
     background-color: rgb(198, 199, 196, 0);
     border: solid 5px white;
     border-radius: 2% 2% 10% 10%;
     box-shadow: .1em .1em 4em #C6C7C4;
 }
-
 .card:hover {
     cursor: pointer;
+    background: linear-gradient(45deg, #1481BA 0%, #F0F600 99%);
 }
-
 .card:active {
-    box-shadow: 0 5px 5px #000000;
+    box-shadow: 0 5px 5px #262730;
     transform: translateY(4px);
 }
 
+
+
+#formContainer {
+    padding-top: 1em;
+}
 form {
     color: #FFFFFF;
     font: "Questrial";
     text-align: center;
-    background: #1481BA;
     background: linear-gradient(45deg, #1481BA 0%, #F0F600 99%);
     padding: 5em;
     width: 75%;
@@ -99,7 +133,6 @@ form {
     border-radius: 25%;
     box-shadow: .1em .1em 4em #C6C7C4;
 }
-
 #formSubmit {
     background: none;
     color: #FFFFFF;
@@ -107,29 +140,29 @@ form {
     border: solid 3px white;
     border-radius: 25%;
 }
-
+#formSubmit:hover {
+    background-color: rgb(198, 199, 196, 1);
+}
 #formSubmit:active {
     box-shadow: 0 5px 5px #262730;
     transform: translateY(4px);
 }
 
+
+
 .footer {
     box-shadow: -2em -2em 4em #C6C7C4;
 }
-
 #gitHubButton:hover {
     cursor: pointer;
 }
-
 #gitHubButton:active {
     box-shadow: 0 5px 5px #262730;
     transform: translateY(4px);
 }
-
 #linkedInButton:hover {
     cursor: pointer;
 }
-
 #linkedInButton:active {
     box-shadow: 0 5px 5px #262730;
     transform: translateY(4px);
